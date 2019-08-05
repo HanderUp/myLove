@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myLove</title>
+    <link href="static/images/love.ico" rel="icon" type="image/x-ico">
+    <link rel="stylesheet" href="static/css/love.css">
+    <link rel="stylesheet" href="static/css/clock.css">
+    <script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+        $webfont.load("#letter", "27cd20d65bd04feaab840eb4c666f4e3", "chenwixun-jian");
+        $webfont.draw();
+    </script>
+</head>
+
+<body>
+    <!-- 音乐 -->
+    <audio src="" loop autoplay></audio>
+    <!-- 书信 -->
+    <div id="letter">
+		<div style="height: 10px;width: 100%;background: repeating-linear-gradient(-45deg, #cb5a5e, #cb5a5e 8px, transparent 8px, transparent 18px);"></div>
+		<div style="padding:10px;">
+        <h1>贺宝贝，七夕节快乐！</h1>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;时间过的好快，一转眼我们在一起已经<span id="day">241</span>天了，我们相聚的时光虽然短暂，但是有你陪伴我一直很幸福。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;在过去的时光里，我们一起经历了很多，有愉快的(一起为我过生日，一起去重庆耍，吃你做的小龙虾，一起打羽毛球......)，有不愉快的（很多不愉快的是我造成的，再次真诚的向你道歉，我会努力改变自己），很多幸福的点点滴滴。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;爱情来了，我们要好好把握，虽然我们相距2000多公里，但是我对你的爱远远超过这个距离。不管前面的路如何崎岖.不管经历过什么,我仍坚信最浪漫的事就是和你一起慢慢变老。相信中间的计时器，将永远继续下去，见证我们的爱情长长久久。</p>
+        <h2>爱你的大猪蹄子</h2>
+		</div>
+    </div>
+
+    <!-- 计时器 -->
+    <div id="clock">
+        <div id="d30" class="num">
+            <div class="upper"></div>
+            <div class="base upper"></div>
+            <div class="base lower"></div>
+            <div class="lower"></div>
+        </div>
+        <div id="d20" class="num">
+            <div class="upper"></div>
+            <div class="base upper"></div>
+            <div class="base lower"></div>
+            <div class="lower"></div>
+        </div>
+        <div id="d10" class="num">
+            <div class="upper"></div>
+            <div class="base upper"></div>
+            <div class="base lower"></div>
+            <div class="lower"></div>
+        </div>
+        <div id="d0" class="num">
+            <div class="upper"></div>
+            <div class="base upper"></div>
+            <div class="base lower"></div>
+            <div class="lower"></div>
+        </div>
+        <div class="colon">天</div>
+
+        <div id="h10" class="num">
+            <div class="upper"></div>
+            <div class="base upper"></div>
+            <div class="base lower"></div>
+            <div class="lower"></div>
+        </div>
+        <div id="h0" class="num">
+            <div class="upper"></div>
+            <div class="base upper"></div>
+            <div class="base lower"></div>
+            <div class="lower"></div>
+        </div>
+        <div class="colon">时</div>
+
+        <div id="m10" class="num">
+            <div class="upper"></div>
+            <div class="base upper"></div>
+            <div class="base lower"></div>
+            <div class="lower"></div>
+        </div>
+        <div id="m0" class="num">
+            <div class="upper"></div>
+            <div class="base upper"></div>
+            <div class="base lower"></div>
+            <div class="lower"></div>
+        </div>
+        <div class="colon">分</div>
+
+        <div id="s10" class="num">
+            <div class="upper"></div>
+            <div class="base upper"></div>
+            <div class="base lower"></div>
+            <div class="lower"></div>
+        </div>
+        <div id="s0" class="num">
+            <div class="upper"></div>
+            <div class="base upper"></div>
+            <div class="base lower"></div>
+            <div class="lower"></div>
+        </div>
+        <div class="colon">秒</div>
+    </div>
+    <!-- 爱心背景 -->
+    <canvas></canvas>
+</body>
+<script type="text/javascript" src="static/js/TweenMax.min.js"></script>
+<script src="static/js/love.js"></script>
+<script>
+
+</script>
+
+</html>

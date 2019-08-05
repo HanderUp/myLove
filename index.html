@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>myLove</title>
-    <link href="static/images/love.ico" rel="icon" type="image/x-ico">
-    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/love.css">
+<meta charset="UTF-8">
+<title>myLove</title>
+<link href="static/images/love.ico" rel="icon" type="image/x-ico">
+<link type="text/css" rel="stylesheet" href="static/css/style.css">
+<script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+        $webfont.load(".letter-context", "27cd20d65bd04feaab840eb4c666f4e3", "chenwixun-jian");
+        $webfont.draw();
+    </script>
 </head>
 
 <body>
-    <audio src="" loop autoplay></audio>
-    <h1 id="h1"></h1>
-    <canvas></canvas>
+<div class="image">
+	<div class="animated-mail">
+		<div class="back-fold"></div>
+		<div class="letter">
+			<div class="letter-border"></div>
+			<div class="letter-context" onclick="openLetter();">
+				点击打开
+			</div>
+			<div class="letter-stamp">
+				<div class="letter-stamp-inner"></div>
+			</div>
+		</div>
+		<div class="top-fold"></div>
+		<div class="body"></div>
+		<div class="left-fold"></div>
+	</div>
+	<div class="shadow"></div>
+</div>
 </body>
-<script src="static/js/love.js"></script>
-
+<script>
+	function openLetter() {
+		window.location.href = "love.html";
+	}
+</script>
 </html>
