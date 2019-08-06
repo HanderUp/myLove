@@ -36,13 +36,26 @@ h2 {
 p {
     font-size: 30px;
     color: #c70012;
-    margin: 10px;
+    margin: 0;
 }
 
-.love-you {
-    text-align: center;
+.pageheader {
+    height: 10px;
+    width: 100%;
+    background: repeating-linear-gradient(-45deg, #cb5a5e, #cb5a5e 8px, transparent 8px, transparent 18px);
+}
+
+.close {
+    position: absolute;
+    left: 95%;
+    top: 1%;
+    font-size: 30px;
+    width: 30px;
     font-weight: bold;
-    display: none;
+    color: #c70012;
+    text-align: center;
+    cursor: pointer;
+    font-family: cursive;
 }
 
 .link {

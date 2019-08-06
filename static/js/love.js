@@ -110,19 +110,19 @@ function setTimeVars() {
     var minute = parseInt(time % 3600 / 60); // 分 -(day*24) 以60秒为一整份 取余 剩下秒数 秒数/60 就是分钟数
     var second = parseInt(time % 60);  // 以60秒为一整份 取余 剩下秒数
 
-    var obj =document.getElementById('day').innerHTML=day;
+    var obj = document.getElementById('day').innerHTML = day;
 
     ss = String(second);
     mm = String(minute);
     hh = String(hour);
     dd = String(day);
 
-    if (ss.length==1) ss = "0"+ss;
-    if (mm.length==1) mm = "0"+mm;
-    if (hh.length==1) hh = "0"+hh;
-    if (dd.length==1) dd = "000"+dd;
-    if(dd.length==2) dd = "00"+dd;
-    if(dd.length===3) dd = "0"+dd;
+    if (ss.length == 1) ss = "0" + ss;
+    if (mm.length == 1) mm = "0" + mm;
+    if (hh.length == 1) hh = "0" + hh;
+    if (dd.length == 1) dd = "000" + dd;
+    if (dd.length == 2) dd = "00" + dd;
+    if (dd.length === 3) dd = "0" + dd;
 
     // dd = "1039";
     // hh = "23";
@@ -165,7 +165,7 @@ var interval = setInterval(function () {
                         tick(h10, Number(hh.substr(0, 1)))
                         if (hh == "23") {
                             tick(h10, 2, true)
-                            tick(h0,Number(hh.substr(1,1)),true)
+                            tick(h0, Number(hh.substr(1, 1)), true)
                             tick(d0, Number(dd.substr(3, 1)))
                             if (dd.substr(3, 1) == "9") {
                                 tick(d10, Number(dd.substr(2, 1)), false)
@@ -191,7 +191,7 @@ function tick(mc, i, toZero = false) {
     // set numbers
     mc.childNodes[3].innerHTML = "<span>" + i + "</span>"; //start upper
     mc.childNodes[5].innerHTML = "<span>" + i + "</span>"; //start lower
-    
+
     if (i == 9 || toZero) i = -1;
     changeNum(mc, i);
 }
@@ -205,3 +205,7 @@ function changeNum(mc, i) {
     TweenMax.fromTo(mc.childNodes[7], .5 + .2 * Math.random(), { rotationX: 90 }, { rotationX: 0, ease: Bounce.easeOut, delay: .3 })
     TweenMax.fromTo(mc.childNodes[5], .6, { alpha: 1 }, { alpha: 0, ease: Bounce.easeOut, delay: .3 })
 }
+
+document.getElementById('close').addEventListener('click',function(){
+    document.getElementById('letter').style.display = 'none';
+},false);
