@@ -1,6 +1,7 @@
 body {
     overflow: hidden;
     margin: 0;
+    font-family: 'Ma Shan Zheng', cursive;
 }
 
 #letter {
@@ -23,7 +24,7 @@ h1 {
     font-size: 40px;
     color: #c70012;
     text-align: center;
-	margin: 0;
+	margin: 25px 0px;
 }
 
 h2 {
@@ -36,7 +37,8 @@ h2 {
 p {
     font-size: 30px;
     color: #c70012;
-    margin: 0;
+    margin: 6px 0px;
+    letter-spacing: 5px;
 }
 
 .pageheader {
