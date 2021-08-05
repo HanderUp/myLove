@@ -110,8 +110,6 @@ function setTimeVars() {
     var minute = parseInt(time % 3600 / 60); // 分 -(day*24) 以60秒为一整份 取余 剩下秒数 秒数/60 就是分钟数
     var second = parseInt(time % 60);  // 以60秒为一整份 取余 剩下秒数
 
-    var obj = document.getElementById('day').innerHTML = day;
-
     ss = String(second);
     mm = String(minute);
     hh = String(hour);
@@ -123,11 +121,6 @@ function setTimeVars() {
     if (dd.length == 1) dd = "000" + dd;
     if (dd.length == 2) dd = "00" + dd;
     if (dd.length === 3) dd = "0" + dd;
-
-    // dd = "1039";
-    // hh = "23";
-    // mm = "59";
-    // ss = "59";
 }
 
 
